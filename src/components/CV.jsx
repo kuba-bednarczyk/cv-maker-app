@@ -9,6 +9,7 @@ const CV = () => {
       <div>
         <h2>Education</h2>
         <p>Politechnika Lubelska</p>
+        <p>Engineer degree</p>
         <p>Computer Sience</p>
         <p>2023-2027</p>
       </div>
