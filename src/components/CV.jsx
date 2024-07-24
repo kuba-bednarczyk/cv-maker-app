@@ -6,18 +6,20 @@ const CV = () => {
         <p>111222333</p>
         <p>kubabednarczyk@gmail.com</p>
       </div>
-      <div>
-        <h2>Education</h2>
-        <p>Politechnika Lubelska</p>
-        <p>Engineer degree</p>
-        <p>Computer Sience</p>
-        <p>2023-2027</p>
-      </div>
-      <div>
-        <h2>Job Experience</h2>
-        <p>Netflix CO.</p>
-        <p>React Developer, Tech Lead</p>
-        <p>2025-2026</p>
+      <div className="info">
+        <div>
+          <h2>Education</h2>
+          <p>Politechnika Lubelska</p>
+          <p>Engineer degree</p>
+          <p>Computer Sience</p>
+          <p>2023-2027</p>
+        </div>
+        <div>
+          <h2>Job Experience</h2>
+          <p>Netflix CO.</p>
+          <p>React Developer, Tech Lead</p>
+          <p>2025-2026</p>
+        </div>
       </div>
     </div>
   )
