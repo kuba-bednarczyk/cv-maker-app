@@ -1,30 +1,33 @@
-const CV = () => {
+const CV = ({ generalInfo: { firstName, lastName, phone, email }, educationInfo, jobExpInfo }) => {
+  const {uniName, degree, major} = educationInfo;
+  const {companyName, role} = jobExpInfo;
+
   return (
     <div className='cv'>
-      <div className="personal-info">
-        <h2>Jakub Bednarczyk</h2>
-        <p>111222333</p>
-        <p>kubabednarczyk@gmail.com</p>
+      <div className='personal-info'>
+        <h2>
+          {firstName} {lastName}
+        </h2>
+        <p>{phone}</p>
+        <p>{email}</p>
       </div>
-      <div className="info">
+      <div className='info'>
         <div>
           <h2>Education</h2>
-          <p>Politechnika Lubelska</p>
-          <p>Engineer degree</p>
-          <p>Computer Sience</p>
-          <p>2023-2027</p>
+          <p>{uniName}</p>
+          <p>{degree}</p>
+          <p>{major}</p>
+          <p>{educationInfo.from} - {educationInfo.to}</p>
         </div>
         <div>
           <h2>Job Experience</h2>
-          <p>Netflix CO.</p>
-          <p>React Developer, Tech Lead</p>
-          <p>2025-2026</p>
+          <p>{companyName}</p>
+          <p>{role}</p>
+          <p>{jobExpInfo.from} - {jobExpInfo.to}</p>
         </div>
       </div>
     </div>
-  )
-}
-
-
+  );
+};
 
 export default CV;
