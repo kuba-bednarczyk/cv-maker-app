@@ -1,4 +1,5 @@
-const CV = ({ generalInfo: { firstName, lastName, phone, email }, educationInfo, jobExpInfo }) => {
+const CV = ({ generalInfo, educationInfo, jobExpInfo }) => {
+  const {firstName, lastName, phone, email} = generalInfo
   const {uniName, degree, major} = educationInfo;
   const {companyName, role} = jobExpInfo;
 
